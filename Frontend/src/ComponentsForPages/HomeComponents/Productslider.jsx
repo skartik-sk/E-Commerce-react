@@ -28,8 +28,7 @@ const Productslider = () => {
           <div
             className="absolute inset-0 flex flex-col items-start justify-end p-6"
           >
-            <h3 className="text-xl font-medium text-white">Casual Trainers</h3>
-
+            
            
           </div>
         </a>
@@ -46,8 +45,7 @@ const Productslider = () => {
           <div
             className="absolute inset-0 flex flex-col items-start justify-end p-6"
           >
-            <h3 className="text-xl font-medium text-white">Winter Jumpers</h3>
-
+            
             
           </div>
         </a>
@@ -64,8 +62,7 @@ const Productslider = () => {
           <div
             className="absolute inset-0 flex flex-col items-start justify-end p-6"
           >
-            <h3 className="text-xl font-medium text-white">Skinny Jeans Blue</h3>
-
+            
            
           </div>
         </a>
