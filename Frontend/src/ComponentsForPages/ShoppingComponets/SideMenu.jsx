@@ -2,14 +2,13 @@ import React from 'react'
 
 const SideMenu = () => {
   return (
-    <div className="flex h-screen flex-col justify-between border-e bg-white w-[15%]">
+    <div className=" h-screen flex-col justify-between border-e bg-white w-[15%] sticky top-0  hidden md:flex">
     <div className="px-4 py-6">
       <span
         className="grid h-10 w-32 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600"
       >
         Logo
       </span>
-  
       <ul className="mt-6 space-y-1">
         <li>
           <a
@@ -25,7 +24,7 @@ const SideMenu = () => {
             <summary
               className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
             >
-              <span className="text-sm font-medium"> Teams </span>
+              <span className="text-sm font-medium"> Clothing </span>
   
               <span
                 className="shrink-0 transition duration-300 group-open:-rotate-180"
@@ -51,7 +50,7 @@ const SideMenu = () => {
                   href=""
                   className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                 >
-                  Banned Users
+                 Men's
                 </a>
               </li>
   
@@ -60,7 +59,7 @@ const SideMenu = () => {
                   href=""
                   className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                 >
-                  Calendar
+                 Women's
                 </a>
               </li>
             </ul>
@@ -72,7 +71,7 @@ const SideMenu = () => {
             href=""
             className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
           >
-            Billing
+           Jewelery
           </a>
         </li>
   
@@ -81,7 +80,7 @@ const SideMenu = () => {
             href=""
             className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
           >
-            Invoices
+          Electronics
           </a>
         </li>
   
@@ -153,7 +152,7 @@ const SideMenu = () => {
           className="h-10 w-10 rounded-full object-cover"
         />
   
-        <div>
+        <div className=''>
           <p className="text-xs">
             <strong className="block font-medium">Eric Frusciante</strong>
   

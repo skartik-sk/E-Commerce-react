@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const popup = () => {
   return (
-    <div className='flex justify-center sticky top-0'>
+    <div className='flex justify-center sticky top-0  '>
 
-    <section className="rounded-3xl shadow-2xl absolute bg-white  ">
+    <section className="rounded-3xl shadow-2xl  absolute bg-white  ">
   <div className="p-8 text-center sm:p-12">
     <p className="text-sm font-semibold uppercase tracking-widest text-yellow-500">
     Want to do some Shopping

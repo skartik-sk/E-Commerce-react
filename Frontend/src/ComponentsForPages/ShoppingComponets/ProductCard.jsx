@@ -1,9 +1,14 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { addToCart } from '../../redux/reducers/addToCart'
-
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 const ProductCard = ({data}) => {
-
+  const notify = () => toast.success("Product added to cart", {
+    autoClose: 2000 ,
+    position: toast.POSITION.TOP_LEFT,
+    icon: ({theme, type}) =>  <img src={data.image}/>
+  });
   
   const dispatch = useDispatch()
 
@@ -14,10 +19,11 @@ const ProductCard = ({data}) => {
       datas: data
     }
     dispatch(addToCart(mydata))
+   notify()
   }
   
   return (
-    <div className='w-[20%] mx-3 my-4  rounded-lg shadow-sm '>
+    <div className='lg:w-[20%] md:w-[40%] sm:w-[40%] w-[70%] mx-1 sm:mx-3 my-4  rounded-lg shadow-sm '>
 
     <a href="#" className="group relative block overflow-hidden">
     <button
@@ -69,6 +75,7 @@ const ProductCard = ({data}) => {
       </div>
     </div>
   </a>
+  <ToastContainer autoClose={3000}/>
             </div>
   )
 }
